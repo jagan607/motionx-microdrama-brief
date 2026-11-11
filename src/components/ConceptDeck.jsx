@@ -38,7 +38,7 @@ export default function ConceptDeck() {
               onClick={() => handleSelectConcept(c.id)}
             >
               <div className="cvc-thumb">
-                <img src={c.heroImg} alt={c.name} loading="lazy" />
+                <img src={c.heroImg} alt={c.name} />
                 <div className="cvc-scrim" />
                 <span className={`badge badge-${c.badgeTone} cvc-badge`}>
                   {c.badge}
@@ -113,7 +113,7 @@ export default function ConceptDeck() {
                     setActivePlateIdx(idx);
                   }}
                 >
-                  <img src={g.src} alt={g.caption} loading="lazy" />
+                  <img src={g.src} alt={g.caption} />
                   <span>{g.caption}</span>
                 </button>
               ))}

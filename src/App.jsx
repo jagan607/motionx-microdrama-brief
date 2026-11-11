@@ -174,7 +174,7 @@ export default function App() {
             {CHANNEL_OUTLIERS.map((o) => (
               <div className="outlier-card" key={o.title}>
                 <div className="outlier-img-wrap">
-                  <img src={o.img} alt={o.title} loading="lazy" />
+                  <img src={o.img} alt={o.title} />
                   <span className="outlier-views">{o.views} Views</span>
                 </div>
                 <div className="outlier-info">
